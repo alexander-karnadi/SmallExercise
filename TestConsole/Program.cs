@@ -14,7 +14,7 @@ public class Program
         var result = DistinctWordCount(testString);
         foreach (var resultItem in result)
         {
-            Console.WriteLine(resultItem.Key + " " + resultItem.Value);
+            Console.WriteLine(resultItem.Key + " - " + resultItem.Value);
         }
 
         Console.ReadLine();
