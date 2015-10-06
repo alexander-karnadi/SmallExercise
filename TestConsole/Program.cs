@@ -26,7 +26,7 @@ public class Program
         // remove non-alphanumeric characters and space
         testString = Regex.Replace(testString.Trim().ToLower(), "[^a-zA-Z0-9 ]", "");
 
-        if (!testString.Any())
+        if (string.IsNullOrWhiteSpace(testString))
         {
             return result;
         }
